@@ -1,0 +1,14 @@
+name: First workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greetings
+        run: echo "Hello world"
+      - name: print Bye
+        run: echo "Done - Bye"
+      - name: Date
+        run: date
+      - name: List of Directories
+        run: ls -al
